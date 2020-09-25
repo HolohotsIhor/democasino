@@ -5,7 +5,10 @@
 3.  Burger
 4.  Header
 5.  Form
-6.  Search section  
+6.  Search section
+7.  News section main page
+8.  Inner page
+
 
 */
 
@@ -14,8 +17,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
 
 /* 2.  General styles */
-$padding-standart: 120px 0px;
-$padding-small: 90px 0px;
+$padding-standart: 60px 0px;
+$padding-small: 30px 0px;
 $typography-color-standart: 16px;
 $white: #fff;
 $green: #2ecc71;
@@ -23,22 +26,22 @@ $black: #222;
 
 body {
     color: #787878;
-    letter-spacing: 1px;
+    letter-spacing: 0;
     font-family: 'Roboto', sans-serif;
     min-width: 320px;
     height: 3000px;
     max-width: 100%;
     font-size: $typography-color-standart;
     background: $green;
-    background: linear-gradient(180deg, #fff 0,#fff 93px, $green 257px, $green);
+    background: linear-gradient(180deg, #fff 0, #fff 93px, $green 257px, $green);
 }
 
 section {
-    padding: $padding-standart;
-    text-align: center;
+    padding: $padding-small;
+    color: #262626;
 
-    @media (min-width: 768px) {
-        padding: $padding-small;
+    @media (min-width: 992px) {
+        padding: $padding-standart;
     }
 }
 
@@ -72,6 +75,52 @@ a {
     &:hover {
         text-decoration: none;
         color: #fff;
+    }
+}
+
+p {
+    font-size: 13px;
+    line-height: 20px;
+
+    @media (min-width: 768px) {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+
+.tmpl-btn {
+    color: $black;
+    font-weight: 300;
+    letter-spacing: 0;
+    border: 1px solid #f4f4f4;
+    padding: 0.275rem 0.75rem;
+    min-width: 200px;
+    display: block;
+    margin-top: 2px;
+    border-radius: 3px;
+    transition: .2s;
+
+    @media (min-width: 1200px) {
+        padding: 0.375rem 0.75rem;
+    }
+
+    &:hover {
+        background-color: $green;
+        color: $white;
+    }
+}
+
+.news-section {
+
+    .container {
+
+        @media (min-width: 1200px) {
+            padding-left: 30px;
+        }
+
+        @media (min-width: 1480px) {
+            padding-left: 45px;
+        }
     }
 }
 
@@ -372,7 +421,7 @@ header {
     height: auto;
     background-color: #f4f4f4;
     padding: 10px 0;
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 
     @media (min-width: 992px) {
         background-color: $white;
@@ -390,7 +439,7 @@ header {
         }
     }
 
-    .top-bar__menu{
+    .top-bar__menu {
 
         .modal-search {
             position: absolute;
@@ -459,6 +508,10 @@ header {
                         margin-right: 47px;
                     }
 
+                    @media (min-width: 1480px) {
+                        margin-right: 80px;
+                    }
+
                     &:last-child {
                         margin-right: 0;
                     }
@@ -517,7 +570,7 @@ header {
                         font-weight: 400px;
                         cursor: pointer;
                         transition: .2s;
-                        
+
 
                         &:hover~ul.sub-menu {
                             visibility: visible;
@@ -1033,6 +1086,7 @@ textarea {
 /* 6.  Search section */
 .search-section {
     padding: 20px 0;
+    text-align: center;
     display: none;
     background-color: $white;
 
@@ -1102,25 +1156,240 @@ textarea {
 
     .search-section__button {
 
-        a {
-            color: $black;
-            font-weight: 300;
-            letter-spacing: 0;
-            border: 1px solid #f4f4f4;
-            padding: 0.275rem 0.75rem;
-            min-width: 200px;
-            display: block;
-            margin-top: 2px;
-            border-radius: 3px;
-            transition: .2s;
+        .tmpl-btn {}
+    }
+}
 
-            @media (min-width: 1200px) {
-                padding: 0.375rem 0.75rem;
+/* 7.  News section main page */
+.news-section {
+    padding: 0;
+
+    .container {
+        background-color: $white;
+
+        &.help {
+            padding: 0;
+        }
+    }
+
+    .news-container__content {
+        padding-top: 30px;
+
+        @media (min-width: 992px) {
+            padding-top: 60px;
+        }
+
+        .news-element {
+
+            a {
+                position: relative;
+                display: block;
+                margin-bottom: 15px;
+
+                &:after {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    background-color: $black;
+                    opacity: .3;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    transition: .2s;
+                }
+
+                &:hover {
+
+                    &:after {
+                        opacity: .5;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 180px;
+                    object-fit: cover;
+
+                    @media (min-width: 992px) {
+                        height: 260px;
+                    }
+
+                    @media (min-width: 1200px) {
+                        height: 290px;
+                    }
+
+                    @media (min-width: 1480px) {
+                        height: 310px;
+                    }
+                }
+
+                h3 {
+                    position: absolute;
+                    bottom: 0;
+                    padding: 15px;
+                    z-index: 1;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 18px;
+
+                    @media (min-width: 768px) {
+                        font-size: 19px;
+                        line-height: 24px;
+                    }
+
+                    @media (min-width: 1200px) {
+                        font-size: 22px;
+                        line-height: 28px;
+                    }
+
+                    @media (min-width: 1480px) {
+                        font-size: 29px;
+                        line-height: 32px;
+                    }
+                }
             }
 
-            &:hover {
-                background-color: #f4f4f4;
+            p {
+
+                @media (min-width: 992px) {
+                    padding: 0 15px;
+                }
             }
         }
+    }
+
+    .news-container__item-three {
+
+        .news-element {
+
+            @media (min-width: 992px) {
+                margin-bottom: 10px;
+            }
+
+
+            a {
+
+                @media (min-width: 992px) {
+                    margin-bottom: 10px;
+                }
+
+                img {
+                    width: 100%;
+                    height: 180px;
+                    object-fit: cover;
+
+                    @media (min-width: 992px) {
+                        height: 220px;
+                    }
+
+                    @media (min-width: 1200px) {
+                        height: 120px;
+                    }
+
+                    @media (min-width: 1480px) {
+                        height: 160px;
+                    }
+                }
+            }
+
+            p {
+
+                @media (min-width: 992px) {
+                    padding: 0;
+                }
+
+                @media (min-width: 1200px) {
+                    font-size: 12px;
+                    line-height: 18px;
+                }
+
+                @media (min-width: 1480px) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+    .news-container__item-three {
+
+        .pre-news {
+            margin-bottom: 15px;
+
+            &:first-child {
+                margin-top: 10px;
+            }
+
+            a {
+                display: block;
+                padding-bottom: 10px;
+                border-bottom: solid 1px #e7e7e7;
+
+                p {
+                    font-size: 13px;
+                    line-height: 14px;
+                    color: $black;
+                    margin-bottom: 5px;
+
+                    @media (min-width: 1200px) {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+
+                    @media (min-width: 1480px) {
+                        font-size: 14px;
+                    }
+                }
+
+                span {
+                    display: block;
+                    color: #999;
+                    font-size: 11px;
+                    line-height: 18px;
+                }
+            }
+        }
+    }
+
+    .news-section__item-box {
+        background-color: #e5e5e5;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 8.  Inner page */
+.inner-section {
+    padding: 0;
+
+    .wrapp {
+        background-color: #bdefd2;
+        padding-top: 40px;
+    }
+
+    .container {
+        background-color: $white;
+
+        &.help {
+            padding: 0;
+        }
+    }
+
+    .inner-section__item-box {
+        background-color: #e5e5e5;
     }
 }
