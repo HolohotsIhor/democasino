@@ -2,193 +2,513 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Demo Casino</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/libs.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Demo Casino</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-	<!-- Header -->
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-6 col-sm-4 col-md-3 col-lg-0 col-xl-0 top-bar__logo">
-					<a href="#">
-						<img src="img/logo.png" alt="logo">
-					</a>
-				</div>
-				<div class="col-6 col-sm-8 col-md-9 col-lg-12 col-xl-12 top-bar__menu">
-					<!-- Search modal -->
-					<a href="#" class="modal-search">&nbsp;</a>
-					<!-- Burger -->
-					<button class="toggle_mnu">
-						<span class="sandwich">
-							<span class="sw-topper"></span>
-							<span class="sw-bottom"></span>
-							<span class="sw-footer"></span>
-						</span>
-					</button>
-					<!-- Mobile menu  -->
-					<nav class="top_mnu">
-						<div class="menu-glavnoe-menyu-container">
-							<ul id="menu-glavnoe-menyu" class="menu">
-								<li class="current-menu-item"><a href="#">Рейтинг казино</a></li>
-								<li><a href="#">Бонусы</a></li>
-								<li><a href="#">Игровые автоматы</a></li>
-								<li><a href="#">Новости</a></li>
-								<li><a href="#">Блог</a></li>
-								<li><a href="#">Рейтинг казино</a></li>
-								<li><a href="#">Игровые автоматы</a></li>
-								<li><a href="#">Новости</a></li>
-								<li><a href="#">Софт</a></li>
-							</ul>
-						</div>
-						<div class="more-info-box">
-							<div class="social-box">
-								<a href="#" target="_blank">
-									<i class="fa fa-facebook-square" aria-hidden="true"></i>
-								</a>
-								<a href="#" target="_blank">
-									<i class="fa fa-twitter-square" aria-hidden="true"></i>
-								</a>
-								<a href="#" target="_blank">
-									<i class="fa fa-instagram" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</nav>
-					<!-- Desktop-nav -->
-					<div class="desk-nav">
-						<div class="menu-glavnoe-menyu-container">
-							<ul id="menu-glavnoe-menyu" class="menu">
-								<li class="current-menu-item"><a href="#">Рейтинг казино</a></li>
-								<li><a href="#">Бонусы</a></li>
-								<li><a href="#">Игровые автоматы</a></li>
-								<li><a href="#">Новости</a></li>
-								<li><a href="#">Блог</a></li>
-								<li><a href="#">Рейтинг казино</a></li>
-								<li><a href="#">Игровые автоматы</a></li>
-								<li><a href="#">Новости</a></li>
-								<li><a href="#">Софт</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- Search modal window -->
-		<div class="modal-window-search">
-			<button class="toggle_mnu_search">
-				<span class="sandwich">
-					<span class="sw-topper"></span>
-					<span class="sw-bottom"></span>
-				</span>
-			</button>
-			<div class="search-box">
-				<div class="centre-align">
-					<form role="search" method="get" id="searchform" action="#">
-						<input type="text" value="" name="s" id="s" placeholder="Найти">
-					</form>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- / Header -->
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-0 col-xl-0 top-bar__logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-8 col-md-9 col-lg-12 col-xl-12 top-bar__menu">
+                    <!-- Search modal -->
+                    <a href="#" class="modal-search">&nbsp;</a>
+                    <!-- Burger -->
+                    <button class="toggle_mnu">
+                        <span class="sandwich">
+                            <span class="sw-topper"></span>
+                            <span class="sw-bottom"></span>
+                            <span class="sw-footer"></span>
+                        </span>
+                    </button>
+                    <!-- Mobile menu  -->
+                    <nav class="top_mnu">
+                        <div class="menu-glavnoe-menyu-container">
+                            <ul id="menu-glavnoe-menyu" class="menu">
+                                <li class="current-menu-item"><a href="#">Рейтинг казино</a></li>
+                                <li><a href="#">Бонусы</a></li>
+                                <li><a href="#">Игровые автоматы</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Рейтинг казино</a></li>
+                                <li><a href="#">Игровые автоматы</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Софт</a></li>
+                            </ul>
+                        </div>
+                        <div class="more-info-box">
+                            <div class="social-box">
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- Desktop-nav -->
+                    <div class="desk-nav">
+                        <div class="menu-glavnoe-menyu-container">
+                            <ul id="menu-glavnoe-menyu" class="menu">
+                                <li class="current-menu-item"><a href="#">Рейтинг казино</a></li>
+                                <li><a href="#">Бонусы</a></li>
+                                <li><a href="#">Игровые автоматы</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Блог</a></li>
+                                <li><a href="#">Рейтинг казино</a></li>
+                                <li><a href="#">Игровые автоматы</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Софт</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search modal window -->
+        <div class="modal-window-search">
+            <button class="toggle_mnu_search">
+                <span class="sandwich">
+                    <span class="sw-topper"></span>
+                    <span class="sw-bottom"></span>
+                </span>
+            </button>
+            <div class="search-box">
+                <div class="centre-align">
+                    <form role="search" method="get" id="searchform" action="#">
+                        <input type="text" value="" name="s" id="s" placeholder="Найти">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- / Header -->
+    <!-- Main content -->
+    <section id="search-section" class="search-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3 search-section__logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-0 col-sm-0 col-md-0 col-lg-6 col-xl-6 search-section__search">
+                    <div class="search-box">
+                        <form role="search" method="get" id="searchform" class="searchform" action="http://ilan.ras.ru/">
+                            <div> <label class="screen-reader-text" for="s">Найти:</label>
+                                <input type="text" value="" name="s" id="s" placeholder="Найти">
+                                <input type="submit" id="searchsubmit" value="Поиск"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3 search-section__button">
+                    <a href="#" class="tmpl-btn">Начать играть</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / Main content -->
+    <!-- Work section -->
+    <section id="news-section" class="news-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9 news-container__content">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 news-container__item-half news-element">
+                            <a href="#">
+                                <img src="img/news-1.jpg" alt="news image">
+                                <h3>Lucky Necko номинирован на «Игру 2020 Года» по версии EGR</h3>
+                            </a>
+                            <p>На своей странице в Facebook, компания Yggdrasil Gaming сообщила, что их слот Lucky Neko&nbsp;номинирован на премию EGR в категории «Игра 2020 Года». Это первый слот механики Gigablox, который в каждом вращении дает увеличенные символы от 2х2 до 4х4. Возможно, EGR поторопились с номинациями на этот год, ведь на оставшиеся месяцы запланировано немало интересных новинок. Хотя…</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 news-container__item-three">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-container__item-full news-element">
+                                    <a href="#">
+                                        <img src="img/news-2.jpg" alt="news image">
+                                    </a>
+                                    <p>GameArt заметает следы? Слот Роштейна переименовали в Rosh</p>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-container__item-full news-element">
+                                    <a href="#">
+                                        <img src="img/news-3.jpg" alt="news image">
+                                    </a>
+                                    <p>Дающие игровые автоматы все таки существуют?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 news-container__item-three">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-container__item-full pre-news">
+                                    <a href="#">
+                                        <p title="Tobias Svensen является исполнительным директором ресурса CasinoGrounds, который объединяет группу популярных стримеров. В интервью с CasinoBeats он обсуждает положение казино стриминга, и говорит, что его потенциал еще не полностью раскрыт...">Директор CasinoGrounds о казино стриминге и его будущем</p>
+                                        <span class="pre-news_date">Сен. 24, 2020</span>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-container__item-full pre-news">
+                                    <a href="#">
+                                        <p title="В России запрет распространяется только на организацию азартных игр, а делать ставки можно, и единственный закон, который игроки могут нарушить – уклонение от уплаты налогов. Так что, на вопрос о...">Налоги на выигрыши в казино онлайн в России</p>
+                                        <span class="pre-news_date">Сен. 26, 2020</span>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-container__item-full pre-news">
+                                    <a href="#">
+                                        <p title="В очередной раз Nolimit City предлагает кое-что новое любителям слотов. 6 октября компания запускает игровой автомат Monkey’s Gold, в котором они впервые используют слот механику xPays. Это что-то вроде каскадов,...">Новая, интригующая слот механика xPays от Nolimit City</p>
+                                        <span class="pre-news_date">Сен. 26, 2020</span>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-container__item-full pre-news">
+                                    <a href="#">
+                                        <p title="24 ноября в казино NetEnt появится игровой автомат Divine Fortune Megaways. Это сиквел знаменитого слота с прогрессивным джекпотом, который компания представила в 2017 году. Для поклонников многоуровневых накопительных призов, это...">В ноябре NetEnt запустит Divine Fortune Megaways (без джекпота)</p>
+                                        <span class="pre-news_date">Сен. 25, 2020</span>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-container__item-full pre-news">
+                                    <a href="#">
+                                        <p title="Недавно был вынесен приговор одному из основателей знаменитого покер рума PokerStars. Исай Шейнберг не сядет в тюрьму, и просто заплатит штраф в $30,000. Он стал последним из тех, кого США...">Основатель PokerStars не сядет в тюрьму, заплатит штраф $30,000</p>
+                                        <span class="pre-news_date">Сен. 25, 2020</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 news-section__item-box">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-section__boxes-container">
+                            <h6>ТОП казино онлайн</h6>
 
-	<!-- Main content -->
-	<section id="search-section" class="search-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3 search-section__logo">
-					<a href="#">
-						<img src="img/logo.png" alt="logo">
-					</a>
-				</div>
-				<div class="col-0 col-sm-0 col-md-0 col-lg-6 col-xl-6 search-section__search">
-					<div class="search-box">
-						<form role="search" method="get" id="searchform" class="searchform" action="http://ilan.ras.ru/">
-							<div> <label class="screen-reader-text" for="s">Найти:</label>
-								<input type="text" value="" name="s" id="s" placeholder="Найти">
-								<input type="submit" id="searchsubmit" value="Поиск"></div>
-							</form>
-						</div>
-					</div>
-					<div class="col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3 search-section__button">
-						<a href="#" class="tmpl-btn">Начать играть</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- / Main content -->
+                            <div class="news-section__boxes-container-item">
+                                <div class="main-wrapp">
+                                    <div class="left-wrapp">
+                                        <a href="#" target="_blank" class="boxes-container-item-imgbox">
+                                            <img src="img/top-1.jpg" alt="Vavada">
+                                        </a>
+                                        <div class="boxes-container-item-maininfo">
+                                            <a href="#" target="_blank">
+                                                <h5>Vavada</h5>
+                                            </a>
+                                            <span>Реклама</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-wrapp">
+                                        <span class="rait-box">
+                                            8.24
+                                            <img src="img/rait-star.png" alt="raiting">
+                                        </span>
+                                        <span class="feedback-box">
+                                            77 отзывов
+                                        </span>
+                                        <div class="btn-wrapp">
+                                            <a href="#" target="_blank" class="play-btn">Играть</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-		<!-- Work section -->
-		<section id="news-section" class="news-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9 news-container__content">
-						<div class="row">
+                            <div class="news-section__boxes-container-item">
+                                <div class="main-wrapp">
+                                    <div class="left-wrapp">
+                                        <a href="#" target="_blank" class="boxes-container-item-imgbox">
+                                            <img src="img/top-2.jpg" alt="Vavada">
+                                        </a>
+                                        <div class="boxes-container-item-maininfo">
+                                            <a href="#" target="_blank">
+                                                <h5>Pobeda</h5>
+                                            </a>
+                                            <span>Реклама</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-wrapp">
+                                        <span class="rait-box">
+                                            8.47
+                                            <img src="img/rait-star.png" alt="raiting">
+                                        </span>
+                                        <span class="feedback-box">
+                                            31 отзывов
+                                        </span>
+                                        <div class="btn-wrapp">
+                                            <a href="#" target="_blank" class="play-btn">Играть</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-							<div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 news-container__item-half news-element">
-								<a href="#">
-									<img src="img/news-1.jpg" alt="news image">	
-									<h3>Lucky Necko номинирован на «Игру 2020 Года» по версии EGR</h3>
-								</a>
-								<p>На своей странице в Facebook, компания Yggdrasil Gaming сообщила, что их слот Lucky Neko&nbsp;номинирован на премию EGR в категории «Игра 2020 Года». Это первый слот механики Gigablox, который в каждом вращении дает увеличенные символы от 2х2 до 4х4. Возможно, EGR поторопились с номинациями на этот год, ведь на оставшиеся месяцы запланировано немало интересных новинок. Хотя…</p>
-							</div>
+                            <div class="news-section__boxes-container-item">
+                                <div class="main-wrapp">
+                                    <div class="left-wrapp">
+                                        <a href="#" target="_blank" class="boxes-container-item-imgbox">
+                                            <img src="img/top-3.jpg" alt="Vavada">
+                                        </a>
+                                        <div class="boxes-container-item-maininfo">
+                                            <a href="#" target="_blank">
+                                                <h5>Fastpay</h5>
+                                            </a>
+                                            <span>Реклама</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-wrapp">
+                                        <span class="rait-box">
+                                            9.61
+                                            <img src="img/rait-star.png" alt="raiting">
+                                        </span>
+                                        <span class="feedback-box">
+                                            31 отзывов
+                                        </span>
+                                        <div class="btn-wrapp">
+                                            <a href="#" target="_blank" class="play-btn">Играть</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-							<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 news-container__item-three">
-								<div class="row">
-									<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-container__item-full news-element">
-										<a href="#">
-											<img src="img/news-2.jpg" alt="news image">	
-										</a>
-										<p>GameArt заметает следы? Слот Роштейна переименовали в Rosh</p>
-									</div>
-									<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-container__item-full news-element">
-										<a href="#">
-											<img src="img/news-3.jpg" alt="news image">	
-										</a>
-										<p>Дающие игровые автоматы все таки существуют?</p>
-									</div>
-								</div>
-							</div>
+                            <div class="news-section__boxes-container-item">
+                                <div class="main-wrapp">
+                                    <div class="left-wrapp">
+                                        <a href="#" target="_blank" class="boxes-container-item-imgbox">
+                                            <img src="img/top-4.jpg" alt="Vavada">
+                                        </a>
+                                        <div class="boxes-container-item-maininfo">
+                                            <a href="#" target="_blank">
+                                                <h5>ZigZag777</h5>
+                                            </a>
+                                            <span>150% до 24000 р.</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-wrapp">
+                                        <span class="rait-box">
+                                            9.37
+                                            <img src="img/rait-star.png" alt="raiting">
+                                        </span>
+                                        <span class="feedback-box">
+                                            12 отзывов
+                                        </span>
+                                        <div class="btn-wrapp">
+                                            <a href="#" target="_blank" class="play-btn">Играть</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-							<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 news-container__item-three">
-								<div class="row">
+                            <div class="news-section__boxes-container-item">
+                                <div class="main-wrapp">
+                                    <div class="left-wrapp">
+                                        <a href="#" target="_blank" class="boxes-container-item-imgbox">
+                                            <img src="img/top-5.jpg" alt="Vavada">
+                                        </a>
+                                        <div class="boxes-container-item-maininfo">
+                                            <a href="#" target="_blank">
+                                                <h5>Joy Casino</h5>
+                                            </a>
+                                            <span>120% до 24000 р.</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-wrapp">
+                                        <span class="rait-box">
+                                            9.44
+                                            <img src="img/rait-star.png" alt="raiting">
+                                        </span>
+                                        <span class="feedback-box">
+                                            12 отзывов
+                                        </span>
+                                        <div class="btn-wrapp">
+                                            <a href="#" target="_blank" class="play-btn">Играть</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-									<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-container__item-full pre-news">
-										<a href="#">
-											<p title="Tobias Svensen является исполнительным директором ресурса CasinoGrounds, который объединяет группу популярных стримеров. В интервью с CasinoBeats он обсуждает положение казино стриминга, и говорит, что его потенциал еще не полностью раскрыт...">Директор CasinoGrounds о казино стриминге и его будущем</p>
-											<span class="pre-news_date">Сен. 24, 2020</span>
-										</a>
-									</div>
+                            <div class="news-section__boxes-container-item">
+                                <div class="main-wrapp">
+                                    <div class="left-wrapp">
+                                        <a href="#" target="_blank" class="boxes-container-item-imgbox">
+                                            <img src="img/top-6.jpg" alt="Vavada">
+                                        </a>
+                                        <div class="boxes-container-item-maininfo">
+                                            <a href="#" target="_blank">
+                                                <h5>Slotum</h5>
+                                            </a>
+                                            <span>120% до 24000 р.</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-wrapp">
+                                        <span class="rait-box">
+                                            9.38
+                                            <img src="img/rait-star.png" alt="raiting">
+                                        </span>
+                                        <span class="feedback-box">
+                                            12 отзывов
+                                        </span>
+                                        <div class="btn-wrapp">
+                                            <a href="#" target="_blank" class="play-btn">Играть</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-									<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-container__item-full">
-										4
-									</div>
+                            <div class="news-section__boxes-container-item">
+                                <div class="main-wrapp">
+                                    <div class="left-wrapp">
+                                        <a href="#" target="_blank" class="boxes-container-item-imgbox">
+                                            <img src="img/top-7.jpg" alt="Vavada">
+                                        </a>
+                                        <div class="boxes-container-item-maininfo">
+                                            <a href="#" target="_blank">
+                                                <h5>EgoCasino</h5>
+                                            </a>
+                                            <span>120% до 24000 р.</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-wrapp">
+                                        <span class="rait-box">
+                                            8.81
+                                            <img src="img/rait-star.png" alt="raiting">
+                                        </span>
+                                        <span class="feedback-box">
+                                            10 отзывов
+                                        </span>
+                                        <div class="btn-wrapp">
+                                            <a href="#" target="_blank" class="play-btn">Играть</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-									<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-container__item-full">
-										5
-									</div>
+                            <div class="news-section__boxes-container-item">
+                                <div class="main-wrapp">
+                                    <div class="left-wrapp">
+                                        <a href="#" target="_blank" class="boxes-container-item-imgbox">
+                                            <img src="img/top-8.jpg" alt="Vavada">
+                                        </a>
+                                        <div class="boxes-container-item-maininfo">
+                                            <a href="#" target="_blank">
+                                                <h5>1X Slots</h5>
+                                            </a>
+                                            <span>100% до €300</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-wrapp">
+                                        <span class="rait-box">
+                                            8.69
+                                            <img src="img/rait-star.png" alt="raiting">
+                                        </span>
+                                        <span class="feedback-box">
+                                            22 отзыва
+                                        </span>
+                                        <div class="btn-wrapp">
+                                            <a href="#" target="_blank" class="play-btn">Играть</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-								</div>
-							</div>
+                            <div class="news-section__boxes-container-item">
+                                <div class="main-wrapp">
+                                    <div class="left-wrapp">
+                                        <a href="#" target="_blank" class="boxes-container-item-imgbox">
+                                            <img src="img/top-9.jpg" alt="Vavada">
+                                        </a>
+                                        <div class="boxes-container-item-maininfo">
+                                            <a href="#" target="_blank">
+                                                <h5>1X Slots</h5>
+                                            </a>
+                                            <span>100% до €300</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-wrapp">
+                                        <span class="rait-box">
+                                            8.69
+                                            <img src="img/rait-star.png" alt="raiting">
+                                        </span>
+                                        <span class="feedback-box">
+                                            22 отзыва
+                                        </span>
+                                        <div class="btn-wrapp">
+                                            <a href="#" target="_blank" class="play-btn">Играть</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-						</div>
-					</div>
-					<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 news-section__item-box">
-						2
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- / Work section -->
+                            <div class="news-section__boxes-container-item">
+                                <div class="main-wrapp">
+                                    <div class="left-wrapp">
+                                        <a href="#" target="_blank" class="boxes-container-item-imgbox">
+                                            <img src="img/top-10.jpg" alt="Vavada">
+                                        </a>
+                                        <div class="boxes-container-item-maininfo">
+                                            <a href="#" target="_blank">
+                                                <h5>TTR casino</h5>
+                                            </a>
+                                            <span>100% до 10000 руб.</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-wrapp">
+                                        <span class="rait-box">
+                                            8.65
+                                            <img src="img/rait-star.png" alt="raiting">
+                                        </span>
+                                        <span class="feedback-box">
+                                            29 отзыва
+                                        </span>
+                                        <div class="btn-wrapp">
+                                            <a href="#" target="_blank" class="play-btn">Играть</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-		<script src="js/libs.min.js"></script>
-		<script src="js/common.js"></script>
-	</body>
+                            <div class="news-section__boxes-container-item">
+                                <div class="main-wrapp">
+                                    <div class="left-wrapp">
+                                        <a href="#" target="_blank" class="boxes-container-item-imgbox">
+                                            <img src="img/top-11.jpg" alt="Vavada">
+                                        </a>
+                                        <div class="boxes-container-item-maininfo">
+                                            <a href="#" target="_blank">
+                                                <h5>Casino X</h5>
+                                            </a>
+                                            <span>100% до €2000</span>
+                                        </div>
+                                    </div>
+                                    <div class="right-wrapp">
+                                        <span class="rait-box">
+                                            8.93
+                                            <img src="img/rait-star.png" alt="raiting">
+                                        </span>
+                                        <span class="feedback-box">
+                                            39 отзыва
+                                        </span>
+                                        <div class="btn-wrapp">
+                                            <a href="#" target="_blank" class="play-btn">Играть</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-	</html>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / Work section -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
