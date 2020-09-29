@@ -8,6 +8,8 @@
 6.  Search section
 7.  News section main page
 8.  New Slots
+9.  Pre footer section
+10. Footer
 11.  Inner page
 
 
@@ -1578,7 +1580,7 @@ textarea {
 
 /* 8.  New Slots */
 .new-slot {
-    padding-top: 0;
+    padding: 0;
 
     .container {
         border-top: solid 1px #e5e5e5;
@@ -1850,6 +1852,87 @@ textarea {
         }
     }
 }
+
+
+
+/* 9.  Pre footer section */
+.pre-footer {
+    padding: 0;
+
+    .container {
+        background-color: #e5e5e5;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        @media (min-width: 992px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .pre-footer__item {
+            text-align: center;
+
+            ul {
+                margin-bottom: 0;
+
+                li {
+                    margin-bottom: 10px;
+
+                    &.current-menu-item {
+
+                        a {
+                            color: $black;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    a {
+                        color: #505050;
+                        font-size: 14px;
+                        transition: .2s;
+
+                        &:hover {
+                            color: $black;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* 10. Footer */
+footer {
+    text-align: center;
+
+    .container {
+        background-color: $black;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        @media (min-width: 992px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-size: 12px;
+            color: $green;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
