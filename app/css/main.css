@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*  Structure
 
 1.  Fonts including
@@ -7,7 +8,8 @@
 5.  Form
 6.  Search section
 7.  News section main page
-8.  Inner page
+8.  New Slots
+11.  Inner page
 
 
 */
@@ -20,7 +22,6 @@ body {
   letter-spacing: 0;
   font-family: 'Roboto', sans-serif;
   min-width: 320px;
-  height: 3000px;
   max-width: 100%;
   font-size: 16px;
   background: #2ecc71;
@@ -66,6 +67,9 @@ p {
     p {
       font-size: 14px;
       line-height: 24px; } }
+
+.modal-backdrop {
+  opacity: .9 !important; }
 
 .tmpl-btn {
   color: #222;
@@ -1065,6 +1069,24 @@ textarea {
         color: #999;
         font-size: 11px;
         line-height: 18px; }
+  @media (min-width: 1200px) {
+    .news-section .full-ver .news-container__item-full.pre-news {
+      padding-top: 20px; } }
+  @media (min-width: 768px) {
+    .news-section .full-ver .news-container__item-full.pre-news:first-child {
+      margin-top: 0; } }
+  @media (min-width: 992px) {
+    .news-section .full-ver .news-container__item-full.pre-news:first-child {
+      margin-top: 10px; } }
+  @media (min-width: 1200px) {
+    .news-section .full-ver .news-container__item-full.pre-news:first-child {
+      margin-top: 0; } }
+  @media (min-width: 1200px) {
+    .news-section .full-ver .news-container__item-full.pre-news a {
+      border-bottom: 0;
+      padding-bottom: 0;
+      padding-top: 10px;
+      border-top: solid 1px #e7e7e7; } }
   .news-section .news-section__item-box {
     background-color: #e5e5e5; }
     .news-section .news-section__item-box .news-section__boxes-container {
@@ -1072,9 +1094,12 @@ textarea {
       .news-section .news-section__item-box .news-section__boxes-container h6 {
         margin-bottom: 15px;
         color: #2b2b2b;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 700;
         padding: 0 10px; }
+        @media (min-width: 992px) {
+          .news-section .news-section__item-box .news-section__boxes-container h6 {
+            font-size: 15px; } }
       .news-section .news-section__item-box .news-section__boxes-container .news-section__boxes-container-item:last-child .main-wrapp {
         border: 0; }
       .news-section .news-section__item-box .news-section__boxes-container .news-section__boxes-container-item .main-wrapp {
@@ -1097,14 +1122,19 @@ textarea {
           display: inline-block;
           float: left; }
           .news-section .news-section__item-box .news-section__boxes-container .left-wrapp .boxes-container-item-imgbox img {
-            max-width: 90px;
+            max-width: 75px;
             margin-right: 5px; }
             @media (min-width: 768px) {
               .news-section .news-section__item-box .news-section__boxes-container .left-wrapp .boxes-container-item-imgbox img {
-                max-width: 80px; } }
+                max-width: 35px; } }
             @media (min-width: 1200px) {
               .news-section .news-section__item-box .news-section__boxes-container .left-wrapp .boxes-container-item-imgbox img {
-                margin-right: 10px; } }
+                margin-right: 10px;
+                max-width: 60px; } }
+            @media (min-width: 1480px) {
+              .news-section .news-section__item-box .news-section__boxes-container .left-wrapp .boxes-container-item-imgbox img {
+                margin-right: 10px;
+                max-width: 80px; } }
         .news-section .news-section__item-box .news-section__boxes-container .left-wrapp .boxes-container-item-maininfo {
           display: inline-block;
           line-height: 16px; }
@@ -1130,7 +1160,7 @@ textarea {
             top: 0;
             right: 0; } }
         .news-section .news-section__item-box .news-section__boxes-container .right-wrapp .rait-box {
-          color: #2ecc71;
+          color: #000;
           display: block;
           text-align: right;
           line-height: 12px; }
@@ -1181,7 +1211,181 @@ textarea {
             .news-section .news-section__item-box .news-section__boxes-container .right-wrapp .btn-wrapp a.play-btn:hover {
               background-color: #22b862; }
 
-/* 8.  Inner page */
+/* 8.  New Slots */
+.new-slot {
+  padding-top: 0; }
+  .new-slot .container {
+    border-top: solid 1px #e5e5e5;
+    background-color: #fff;
+    padding-top: 30px; }
+    @media (min-width: 992px) {
+      .new-slot .container {
+        padding-top: 60px; } }
+    .new-slot .container h3 {
+      font-size: 20px;
+      font-weight: 700; }
+      @media (min-width: 992px) {
+        .new-slot .container h3 {
+          padding: 0 15px; } }
+    .new-slot .container .owl-carousel .owl-item {
+      padding: 20px;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s; }
+    .new-slot .container .owl-carousel .item {
+      position: relative;
+      top: 0;
+      left: 0;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s; }
+      .new-slot .container .owl-carousel .item .modal-wrapp {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+      .new-slot .container .owl-carousel .item:hover {
+        top: -10px;
+        left: 0; }
+        .new-slot .container .owl-carousel .item:hover .play-btn {
+          display: block; }
+        .new-slot .container .owl-carousel .item:hover .stat-box tr:last-child {
+          color: #fff; }
+      .new-slot .container .owl-carousel .item .play-btn {
+        top: 0;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 50%;
+        display: none;
+        z-index: 999; }
+        .new-slot .container .owl-carousel .item .play-btn img {
+          max-width: 30%;
+          display: inline-block; }
+      .new-slot .container .owl-carousel .item .modal {
+        z-index: 9999; }
+      .new-slot .container .owl-carousel .item .stat-box {
+        font-size: 12px;
+        background: -webkit-gradient(linear, left bottom, left top, from(#000), to(transparent));
+        background: -o-linear-gradient(bottom, #000 0%, transparent 100%);
+        background: linear-gradient(0deg, #000 0%, transparent 100%);
+        position: absolute;
+        width: 100%;
+        bottom: 17px;
+        left: 0;
+        border-radius: 5px;
+        padding: 30px 20px 10px 20px; }
+        .new-slot .container .owl-carousel .item .stat-box table {
+          width: 100%; }
+          .new-slot .container .owl-carousel .item .stat-box table tr {
+            -webkit-transition: .2s;
+            -o-transition: .2s;
+            transition: .2s; }
+            .new-slot .container .owl-carousel .item .stat-box table tr:first-child {
+              color: #3b9fff; }
+            .new-slot .container .owl-carousel .item .stat-box table tr:last-child {
+              color: #6b686a; }
+            .new-slot .container .owl-carousel .item .stat-box table tr td {
+              width: 50%; }
+              .new-slot .container .owl-carousel .item .stat-box table tr td:first-child {
+                text-align: left; }
+              .new-slot .container .owl-carousel .item .stat-box table tr td:last-child {
+                text-align: right; }
+      .new-slot .container .owl-carousel .item a {
+        display: inline-block;
+        z-index: 1;
+        width: 100%; }
+        .new-slot .container .owl-carousel .item a img {
+          border-radius: 5px;
+          margin-bottom: 10px;
+          -webkit-transition: .2s;
+          -o-transition: .2s;
+          transition: .2s;
+          -o-object-fit: cover;
+             object-fit: cover; }
+        .new-slot .container .owl-carousel .item a:after {
+          content: "Новинка";
+          position: absolute;
+          top: 10px;
+          left: -7px;
+          color: #fff;
+          background-color: #2ecc71;
+          padding: 0 7px;
+          font-size: 11px;
+          font-weight: 400;
+          text-align: center;
+          line-height: 23px;
+          border-radius: 3px; }
+    .new-slot .container .owl-carousel .text-content a h4 {
+      color: #222;
+      font-size: 13px;
+      color: #999;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+      text-align: center;
+      font-weight: 300; }
+      .new-slot .container .owl-carousel .text-content a h4:hover {
+        color: #2ecc71; }
+    .new-slot .container .owl-theme .owl-nav {
+      display: none; }
+    .new-slot .container .owl-theme .owl-dots {
+      position: absolute;
+      top: -29px;
+      right: 0; }
+      .new-slot .container .owl-theme .owl-dots .owl-dot span {
+        border-radius: 0;
+        margin: 0;
+        margin-right: 5px;
+        width: 15px;
+        height: 10px;
+        background-color: #fff;
+        border: solid 1px #D6D6D6; }
+        @media (min-width: 992px) {
+          .new-slot .container .owl-theme .owl-dots .owl-dot span {
+            width: 20px;
+            height: 13px; } }
+        .new-slot .container .owl-theme .owl-dots .owl-dot span:hover {
+          border: solid 1px #2ecc71; }
+      .new-slot .container .owl-theme .owl-dots .owl-dot.active span {
+        background-color: #2ecc71; }
+  @media (min-width: 992px) {
+    .new-slot .modal .modal-dialog {
+      max-width: 800px;
+      margin: 1.75rem auto; } }
+  @media (min-width: 1200px) {
+    .new-slot .modal .modal-dialog {
+      max-width: 1000px;
+      margin: 1.75rem auto; } }
+  .new-slot .modal .modal-content {
+    background-color: transparent;
+    border: 0;
+    height: 500px; }
+    @media (min-width: 1200px) {
+      .new-slot .modal .modal-content {
+        height: 700px; } }
+    .new-slot .modal .modal-content .modal-header {
+      border-bottom: 0; }
+      .new-slot .modal .modal-content .modal-header .close {
+        margin: 0;
+        padding: 0;
+        opacity: 1; }
+        .new-slot .modal .modal-content .modal-header .close span {
+          font-size: 60px;
+          color: #2ecc71;
+          line-height: 0;
+          opacity: 1; }
+    .new-slot .modal .modal-content .modal-body {
+      padding: 0;
+      line-height: 0; }
+      .new-slot .modal .modal-content .modal-body iframe {
+        width: 100%;
+        height: 100%; }
+
+/* 11.  Inner page */
 .inner-section {
   padding: 0; }
   .inner-section .wrapp {

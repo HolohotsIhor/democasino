@@ -34,47 +34,25 @@ $(document).ready(function() {
         $(".modal-window-search").css("visibility", "hidden");
     });
 
-    /* Parallax 
-    $('.parallax-window').parallax({imageSrc: 'img/background.jpg'}); */
-
-    /* Resize
-    function heightDetect(){
-        $(".parallax-window").css("height", $(window).height());    
-    }
-    heightDetect();
-    $(window).resize(function(){
-        heightDetect();
+    /********************** OWL carousel ***************/
+    var owl = $('.carousel-one');
+    owl.owlCarousel({
+        loop: true,
+        nav: true,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            960: {
+                items: 4
+            },
+            1200: {
+                items: 5
+            }
+        }
     });
-     */
-
-    /* Scrool animation
-    $(window).scroll(function() {
-
-        $('.mov').each(function() {
-            var imagePos = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow + 600) {
-                $(this).addClass('fadeIn animated');
-                $(this).css('opacity', '1');
-            }
-        });
-
-        $('.mov-left').each(function() {
-            var imagePos = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow + 600) {
-                $(this).addClass('fadeInLeft animated');
-                $(this).css('opacity', '1');
-            }
-        });
-
-        $('.mov-right').each(function() {
-            var imagePos = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow + 600) {
-                $(this).addClass('fadeInRight animated');
-                $(this).css('opacity', '1');
-            }
-        });
-    });*/
 });
