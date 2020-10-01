@@ -340,6 +340,30 @@ header {
       display: none; } }
   header .top-bar__logo a img {
     max-width: 130px; }
+  @media (min-width: 576px) {
+    header .top-bar__menu {
+      text-align: center; } }
+  header .top-bar__menu .raiting-casino-button {
+    background-color: red;
+    font-size: 12px;
+    max-width: 55px;
+    display: inline-block;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+    padding: 5px 8px; }
+    @media (min-width: 400px) {
+      header .top-bar__menu .raiting-casino-button {
+        max-width: unset;
+        padding: 6px 8px; } }
+    @media (min-width: 545px) {
+      header .top-bar__menu .raiting-casino-button {
+        max-width: unset;
+        padding: 9px 17px;
+        letter-spacing: 0; } }
+    @media (min-width: 992px) {
+      header .top-bar__menu .raiting-casino-button {
+        display: none; } }
   header .top-bar__menu .modal-search {
     position: absolute;
     top: 1px;
@@ -385,14 +409,14 @@ header {
       margin-bottom: 0; }
       header .top-bar__menu .desk-nav ul li {
         display: inline-block;
-        margin-right: 25px;
+        margin-right: 46px;
         position: relative; }
         @media (min-width: 1200px) {
           header .top-bar__menu .desk-nav ul li {
-            margin-right: 47px; } }
+            margin-right: 72px; } }
         @media (min-width: 1480px) {
           header .top-bar__menu .desk-nav ul li {
-            margin-right: 80px; } }
+            margin-right: 109px; } }
         header .top-bar__menu .desk-nav ul li:last-child {
           margin-right: 0; }
         header .top-bar__menu .desk-nav ul li:hover a {
@@ -412,7 +436,7 @@ header {
           margin-left: 5px; }
         header .top-bar__menu .desk-nav ul li a {
           color: #222;
-          letter-spacing: 0;
+          letter-spacing: 1px;
           line-height: 1;
           font-size: 14px;
           font-weight: 400px;

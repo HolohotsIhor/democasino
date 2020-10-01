@@ -446,6 +446,35 @@ header {
     }
 
     .top-bar__menu {
+        @media (min-width: 576px) {
+            text-align: center;
+        }
+        
+        .raiting-casino-button {
+            background-color: red;
+            font-size: 12px;
+            max-width: 55px;
+            display: inline-block;
+            letter-spacing: -1px;
+            line-height: 1;
+            text-align: center;
+            padding: 5px 8px;
+
+            @media (min-width: 400px) {
+                max-width: unset;
+                padding: 6px 8px;
+            }
+
+            @media (min-width: 545px) {
+                max-width: unset;
+                padding: 9px 17px;
+                letter-spacing: 0;
+            }
+
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
 
         .modal-search {
             position: absolute;
@@ -507,15 +536,15 @@ header {
 
                 li {
                     display: inline-block;
-                    margin-right: 25px;
+                    margin-right: 46px;
                     position: relative;
 
                     @media (min-width: 1200px) {
-                        margin-right: 47px;
+                        margin-right: 72px;
                     }
 
                     @media (min-width: 1480px) {
-                        margin-right: 80px;
+                        margin-right: 109px;
                     }
 
                     &:last-child {
@@ -570,7 +599,7 @@ header {
 
                     a {
                         color: $black;
-                        letter-spacing: 0;
+                        letter-spacing: 1px;
                         line-height: 1;
                         font-size: 14px;
                         font-weight: 400px;
