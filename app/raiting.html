@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Demo Casino</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<!-- Header -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-6 col-sm-4 col-md-3 col-lg-0 col-xl-0 top-bar__logo">
+					<a href="#">
+						<img src="img/logo.png" alt="logo">
+					</a>
+				</div>
+				<div class="col-6 col-sm-8 col-md-9 col-lg-12 col-xl-12 top-bar__menu">
+					<a href="#" class="raiting-casino-button">Рейтинг казино</a>
+					<!-- Search modal -->
+					<a href="#" class="modal-search">&nbsp;</a>
+					<!-- Burger -->
+					<button class="toggle_mnu">
+						<span class="sandwich">
+							<span class="sw-topper"></span>
+							<span class="sw-bottom"></span>
+							<span class="sw-footer"></span>
+						</span>
+					</button>
+					<!-- Mobile menu  -->
+					<nav class="top_mnu">
+						<div class="menu-glavnoe-menju-container"><ul id="menu-glavnoe-menju-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-64"><a href="http://my-sitetest.space/democasino-wp/" aria-current="page">Главная</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="http://my-sitetest.space/democasino-wp/rejting-kazino-2/">Рейтинг казино</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="http://my-sitetest.space/democasino-wp/bonusy/">Бонусы</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a href="http://my-sitetest.space/democasino-wp/igrovye-avtomaty-2/">Игровые автоматы</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="http://my-sitetest.space/democasino-wp/novosti/">Новости</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="http://my-sitetest.space/democasino-wp/blog/">Блог</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="http://my-sitetest.space/democasino-wp/novosti-2/">Новости</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="http://my-sitetest.space/democasino-wp/soft/">Софт</a></li>
+						</ul></div>
+						<div class="more-info-box">
+							<div class="social-box">
+								<a href="#" target="_blank">
+									<i class="fa fa-facebook-square" aria-hidden="true"></i>
+								</a>
+								<a href="#" target="_blank">
+									<i class="fa fa-twitter-square" aria-hidden="true"></i>
+								</a>
+								<a href="#" target="_blank">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</nav>
+					<!-- Desktop-nav -->
+					<div class="desk-nav">
+						<div class="menu-glavnoe-menju-container"><ul id="menu-glavnoe-menju-1" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-64"><a href="http://my-sitetest.space/democasino-wp/" aria-current="page">Главная</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70"><a href="http://my-sitetest.space/democasino-wp/rejting-kazino-2/">Рейтинг казино</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="http://my-sitetest.space/democasino-wp/bonusy/">Бонусы</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a href="http://my-sitetest.space/democasino-wp/igrovye-avtomaty-2/">Игровые автоматы</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-68"><a href="http://my-sitetest.space/democasino-wp/novosti/">Новости</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="http://my-sitetest.space/democasino-wp/blog/">Блог</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-69"><a href="http://my-sitetest.space/democasino-wp/novosti-2/">Новости</a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="http://my-sitetest.space/democasino-wp/soft/">Софт</a></li>
+						</ul></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Search modal window -->
+		<div class="modal-window-search">
+			<button class="toggle_mnu_search">
+				<span class="sandwich">
+					<span class="sw-topper"></span>
+					<span class="sw-bottom"></span>
+				</span>
+			</button>
+			<div class="search-box">
+				<div class="centre-align">
+					<form role="search" method="get" id="searchform" action="#">
+						<input type="text" value="" name="s" id="s" placeholder="Найти">
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- / Header -->
+	
+	<!-- Main content -->
+	<section id="search-section" class="search-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3 search-section__logo">
+					<a href="#">
+						<img src="img/logo.png" alt="logo">
+					</a>
+				</div>
+				<div class="col-0 col-sm-0 col-md-0 col-lg-6 col-xl-6 search-section__search">
+					<div class="search-box">
+						<form role="search" method="get" id="searchform" class="searchform" action="http://ilan.ras.ru/">
+							<div> <label class="screen-reader-text" for="s">Найти:</label>
+								<input type="text" value="" name="s" id="s" placeholder="Найти">
+								<input type="submit" id="searchsubmit" value="Поиск"></div>
+							</form>
+						</div>
+					</div>
+					<div class="col-0 col-sm-0 col-md-0 col-lg-3 col-xl-3 search-section__button">
+						<a href="#" class="tmpl-btn">Начать играть</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- / Main content -->
+		<section id="inner-section" class="inner-section">
+			<div class="container help">
+				<div class="wrapp"></div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9 inner-container__content">
+						<h1>Рейтинг казино</h1>
+
+						<p>В этом рейтинге не просто беспорядочно собраны онлайн казино, а расставлены в соответствии со своими достоинствами. Главным принципом при составлении рейтинга лучших казино онлайн является максимальная объективность, которая достигается за счет специального алгоритма. То есть, это не оценка одного человека, а учет фактов. Алгоритм учитывает отзывы игроков, наличие лицензий, софта и другие характеристики.</p>
+
+
+
+						<h3>Какова цель нашего рейтинга онлайн казино?</h3>
+
+
+
+						<p>Прежде всего, это сделать выбор казино простым. Зачастую игроки, особенно новички, нетерпеливы и не пытаются подробно разузнать про интернет казино, в котором планируют играть. Поэтому иногда даже не понимают, насколько они рискуют, не проверяя оператора.</p>
+
+
+
+						<p>Чтобы игроками не нужно было искать информацию, узнавать насколько надежно, удобно и интересно казино, мы создали этот рейтинг,учитывающий отзывы игроков. Вы можете быть уверены, что на топовые позиции выходят только те, кто этого заслуживает. Здесь вы можете не бояться, что вам попадутся нелицензированные казино. Для них у нас отдельный,</p>
+
+
+						<div class="wrapp-rait-casino">
+							<!-- Цикл вывода записей -->    
+
+							<div class="news-section__boxes-container-item">
+								<div class="main-wrapp">
+									<div class="left-wrapp">
+										<a href="http://my-sitetest.space/democasino-wp/argocasino/" class="boxes-container-item-imgbox">
+											<img width="240" height="135" src="http://my-sitetest.space/democasino-wp/wp-content/uploads/2020/10/argocasino.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">                                    </a>
+
+											<div class="rait-wrapp">
+											<span class="rait-box">
+												9.43                                        <img src="http://my-sitetest.space/democasino-wp/wp-content/themes/democasino/img/rait-star.png" alt="raiting">
+											</span>
+											<span class="feedback-box">
+											0 отзывов                                    </span>
+											</div>
+											<div class="boxes-container-item-maininfo">
+												<a href="http://my-sitetest.space/democasino-wp/argocasino/">
+													<h5>ArgoCasino</h5>
+												</a>
+												<span>120% до 24 000 р.</span>
+											</div>
+										</div>
+										<div class="right-wrapp">
+											<div class="btn-wrapp review">
+												<a href="http://my-sitetest.space/democasino-wp/argocasino/" class="play-btn">Играть</a>
+											</div>
+											<div class="btn-wrapp">
+												<a href="https://affgambler.ru/click/argocasino" target="_blank" class="play-btn">Играть</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="news-section__boxes-container-item">
+									<div class="main-wrapp">
+										<div class="left-wrapp">
+											<a href="http://my-sitetest.space/democasino-wp/wildtornado/" class="boxes-container-item-imgbox">
+												<img width="240" height="135" src="http://my-sitetest.space/democasino-wp/wp-content/uploads/2020/10/wildtornado.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">                                    </a>
+												<span class="rait-box">
+													8.66                                        <img src="http://my-sitetest.space/democasino-wp/wp-content/themes/democasino/img/rait-star.png" alt="raiting">
+												</span>
+												<span class="feedback-box">
+												0 отзывов                                    </span>
+												<div class="boxes-container-item-maininfo">
+													<a href="http://my-sitetest.space/democasino-wp/wildtornado/">
+														<h5>Wildtornado</h5>
+													</a>
+													<span>100% до €100</span>
+												</div>
+											</div>
+											<div class="right-wrapp">
+												<div class="btn-wrapp review">
+													<a href="http://my-sitetest.space/democasino-wp/wildtornado/" class="play-btn">Играть</a>
+												</div>
+												<div class="btn-wrapp">
+													<a href="https://www.wildtornado.org/exclusive?stag=17593_5f7b07192b7e50da411598f5" target="_blank" class="play-btn">Играть</a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="news-section__boxes-container-item">
+										<div class="main-wrapp">
+											<div class="left-wrapp">
+												<a href="http://my-sitetest.space/democasino-wp/fastpay/" class="boxes-container-item-imgbox">
+													<img width="240" height="135" src="http://my-sitetest.space/democasino-wp/wp-content/uploads/2020/10/fastpay-logo-240x135-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">                                    </a>
+													<span class="rait-box">
+														9.61                                        <img src="http://my-sitetest.space/democasino-wp/wp-content/themes/democasino/img/rait-star.png" alt="raiting">
+													</span>
+													<span class="feedback-box">
+													0 отзывов                                    </span>
+													<div class="boxes-container-item-maininfo">
+														<a href="http://my-sitetest.space/democasino-wp/fastpay/">
+															<h5>Fastpay</h5>
+														</a>
+														<span>Реклама</span>
+													</div>
+												</div>
+												<div class="right-wrapp">
+													<div class="btn-wrapp review">
+														<a href="http://my-sitetest.space/democasino-wp/fastpay/" class="play-btn">Играть</a>
+													</div>
+													<div class="btn-wrapp">
+														<a href="https://www.playfastpay.net/?stag=2526_5f7b05c3430733bed3cefd01" target="_blank" class="play-btn">Играть</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="news-section__boxes-container-item">
+											<div class="main-wrapp">
+												<div class="left-wrapp">
+													<a href="http://my-sitetest.space/democasino-wp/zigzag777/" class="boxes-container-item-imgbox">
+														<img width="240" height="135" src="http://my-sitetest.space/democasino-wp/wp-content/uploads/2020/10/777zigzag-240x135-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">                                    </a>
+														<span class="rait-box">
+															9.37                                        <img src="http://my-sitetest.space/democasino-wp/wp-content/themes/democasino/img/rait-star.png" alt="raiting">
+														</span>
+														<span class="feedback-box">
+														0 отзывов                                    </span>
+														<div class="boxes-container-item-maininfo">
+															<a href="http://my-sitetest.space/democasino-wp/zigzag777/">
+																<h5>ZigZag777</h5>
+															</a>
+															<span>150% до 24000 р.</span>
+														</div>
+													</div>
+													<div class="right-wrapp">
+														<div class="btn-wrapp review">
+															<a href="http://my-sitetest.space/democasino-wp/zigzag777/" class="play-btn">Играть</a>
+														</div>
+														<div class="btn-wrapp">
+															<a href="https://affgambler.ru/click/zigzag777" target="_blank" class="play-btn">Играть</a>
+														</div>
+													</div>
+												</div>
+											</div>
+
+
+											<div class="news-section__boxes-container-item">
+												<div class="main-wrapp">
+													<div class="left-wrapp">
+														<a href="http://my-sitetest.space/democasino-wp/joy-casino/" class="boxes-container-item-imgbox">
+															<img width="240" height="135" src="http://my-sitetest.space/democasino-wp/wp-content/uploads/2020/10/JoyCasino-logo-240x135-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">                                    </a>
+															<span class="rait-box">
+																9.44                                        <img src="http://my-sitetest.space/democasino-wp/wp-content/themes/democasino/img/rait-star.png" alt="raiting">
+															</span>
+															<span class="feedback-box">
+															0 отзывов                                    </span>
+															<div class="boxes-container-item-maininfo">
+																<a href="http://my-sitetest.space/democasino-wp/joy-casino/">
+																	<h5>Joy Casino</h5>
+																</a>
+																<span>120% до 24000 р.</span>
+															</div>
+														</div>
+														<div class="right-wrapp">
+															<div class="btn-wrapp review">
+																<a href="http://my-sitetest.space/democasino-wp/joy-casino/" class="play-btn">Играть</a>
+															</div>
+															<div class="btn-wrapp">
+																<a href="https://affgambler.ru/click/joycasino" target="_blank" class="play-btn">Играть</a>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+												<div class="news-section__boxes-container-item">
+													<div class="main-wrapp">
+														<div class="left-wrapp">
+															<a href="http://my-sitetest.space/democasino-wp/slotum/" class="boxes-container-item-imgbox">
+																<img width="240" height="135" src="http://my-sitetest.space/democasino-wp/wp-content/uploads/2020/10/slotum-logo-240x135-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">                                    </a>
+																<span class="rait-box">
+																	9.38                                        <img src="http://my-sitetest.space/democasino-wp/wp-content/themes/democasino/img/rait-star.png" alt="raiting">
+																</span>
+																<span class="feedback-box">
+																0 отзывов                                    </span>
+																<div class="boxes-container-item-maininfo">
+																	<a href="http://my-sitetest.space/democasino-wp/slotum/">
+																		<h5>Slotum</h5>
+																	</a>
+																	<span>120% до 24000 р.</span>
+																</div>
+															</div>
+															<div class="right-wrapp">
+																<div class="btn-wrapp review">
+																	<a href="http://my-sitetest.space/democasino-wp/slotum/" class="play-btn">Играть</a>
+																</div>
+																<div class="btn-wrapp">
+																	<a href="https://www.slotumgame.com/?stag=3964_10248089" target="_blank" class="play-btn">Играть</a>
+																</div>
+															</div>
+														</div>
+													</div>
+
+
+													<div class="news-section__boxes-container-item">
+														<div class="main-wrapp">
+															<div class="left-wrapp">
+																<a href="http://my-sitetest.space/democasino-wp/egocasino/" class="boxes-container-item-imgbox">
+																	<img width="240" height="135" src="http://my-sitetest.space/democasino-wp/wp-content/uploads/2020/10/egocasino-logo-240x135-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">                                    </a>
+																	<span class="rait-box">
+																		8.81                                        <img src="http://my-sitetest.space/democasino-wp/wp-content/themes/democasino/img/rait-star.png" alt="raiting">
+																	</span>
+																	<span class="feedback-box">
+																	0 отзывов                                    </span>
+																	<div class="boxes-container-item-maininfo">
+																		<a href="http://my-sitetest.space/democasino-wp/egocasino/">
+																			<h5>EgoCasino</h5>
+																		</a>
+																		<span>120% до 24000 р.</span>
+																	</div>
+																</div>
+																<div class="right-wrapp">
+																	<div class="btn-wrapp review">
+																		<a href="http://my-sitetest.space/democasino-wp/egocasino/" class="play-btn">Играть</a>
+																	</div>
+																	<div class="btn-wrapp">
+																		<a href="https://affgambler.ru/click/egocasino" target="_blank" class="play-btn">Играть</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+
+														<div class="news-section__boxes-container-item">
+															<div class="main-wrapp">
+																<div class="left-wrapp">
+																	<a href="http://my-sitetest.space/democasino-wp/1x-slots/" class="boxes-container-item-imgbox">
+																		<img width="240" height="135" src="http://my-sitetest.space/democasino-wp/wp-content/uploads/2020/10/1xslots-240x135-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">                                    </a>
+																		<span class="rait-box">
+																			8.69                                        <img src="http://my-sitetest.space/democasino-wp/wp-content/themes/democasino/img/rait-star.png" alt="raiting">
+																		</span>
+																		<span class="feedback-box">
+																		0 отзывов                                    </span>
+																		<div class="boxes-container-item-maininfo">
+																			<a href="http://my-sitetest.space/democasino-wp/1x-slots/">
+																				<h5>1X Slots</h5>
+																			</a>
+																			<span>100% до €300</span>
+																		</div>
+																	</div>
+																	<div class="right-wrapp">
+																		<div class="btn-wrapp review">
+																			<a href="http://my-sitetest.space/democasino-wp/1x-slots/" class="play-btn">Играть</a>
+																		</div>
+																		<div class="btn-wrapp">
+																			<a href="https://affgambler.ru/click/1xslots" target="_blank" class="play-btn">Играть</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+
+															<div class="news-section__boxes-container-item">
+																<div class="main-wrapp">
+																	<div class="left-wrapp">
+																		<a href="http://my-sitetest.space/democasino-wp/ttr-casino/" class="boxes-container-item-imgbox">
+																			<img width="240" height="135" src="http://my-sitetest.space/democasino-wp/wp-content/uploads/2020/10/ttr.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">                                    </a>
+																			<span class="rait-box">
+																				8.65                                        <img src="http://my-sitetest.space/democasino-wp/wp-content/themes/democasino/img/rait-star.png" alt="raiting">
+																			</span>
+																			<span class="feedback-box">
+																			0 отзывов                                    </span>
+																			<div class="boxes-container-item-maininfo">
+																				<a href="http://my-sitetest.space/democasino-wp/ttr-casino/">
+																					<h5>TTR casino</h5>
+																				</a>
+																				<span>100% до 10000 руб.</span>
+																			</div>
+																		</div>
+																		<div class="right-wrapp">
+																			<div class="btn-wrapp review">
+																				<a href="http://my-sitetest.space/democasino-wp/ttr-casino/" class="play-btn">Играть</a>
+																			</div>
+																			<div class="btn-wrapp">
+																				<a href="https://qafv5gksc.info/refer/f595ec93" target="_blank" class="play-btn">Играть</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+
+																<div class="news-section__boxes-container-item">
+																	<div class="main-wrapp">
+																		<div class="left-wrapp">
+																			<a href="http://my-sitetest.space/democasino-wp/casino-x/" class="boxes-container-item-imgbox">
+																				<img width="240" height="135" src="http://my-sitetest.space/democasino-wp/wp-content/uploads/2020/10/Casino-X-logo-240x135-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">                                    </a>
+																				<span class="rait-box">
+																					8.93                                        <img src="http://my-sitetest.space/democasino-wp/wp-content/themes/democasino/img/rait-star.png" alt="raiting">
+																				</span>
+																				<span class="feedback-box">
+																				0 отзывов                                    </span>
+																				<div class="boxes-container-item-maininfo">
+																					<a href="http://my-sitetest.space/democasino-wp/casino-x/">
+																						<h5>Casino-X</h5>
+																					</a>
+																					<span>100% до €2000</span>
+																				</div>
+																			</div>
+																			<div class="right-wrapp">
+																				<div class="btn-wrapp review">
+																					<a href="http://my-sitetest.space/democasino-wp/casino-x/" class="play-btn">Играть</a>
+																				</div>
+																				<div class="btn-wrapp">
+																					<a href="https://affgambler.ru/casino/casino-x/" target="_blank" class="play-btn">Играть</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+
+
+																	<div class="news-section__boxes-container-item">
+																		<div class="main-wrapp">
+																			<div class="left-wrapp">
+																				<a href="http://my-sitetest.space/democasino-wp/pobeda/" class="boxes-container-item-imgbox">
+																					<img width="240" height="135" src="http://my-sitetest.space/democasino-wp/wp-content/uploads/2020/10/pobeda.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">                                    </a>
+																					<span class="rait-box">
+																						8.47                                        <img src="http://my-sitetest.space/democasino-wp/wp-content/themes/democasino/img/rait-star.png" alt="raiting">
+																					</span>
+																					<span class="feedback-box">
+																					0 отзывов                                    </span>
+																					<div class="boxes-container-item-maininfo">
+																						<a href="http://my-sitetest.space/democasino-wp/pobeda/">
+																							<h5>Pobeda</h5>
+																						</a>
+																						<span>Реклама</span>
+																					</div>
+																				</div>
+																				<div class="right-wrapp">
+																					<div class="btn-wrapp review">
+																						<a href="http://my-sitetest.space/democasino-wp/pobeda/" class="play-btn">Играть</a>
+																					</div>
+																					<div class="btn-wrapp">
+																						<a href="http://pobeda8.me/?link=YdhxCKv2" target="_blank" class="play-btn">Играть</a>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+
+
+																		<div class="news-section__boxes-container-item">
+																			<div class="main-wrapp">
+																				<div class="left-wrapp">
+																					<a href="http://my-sitetest.space/democasino-wp/vavada/" class="boxes-container-item-imgbox">
+																						<img width="240" height="135" src="http://my-sitetest.space/democasino-wp/wp-content/uploads/2020/10/vavada.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy">                                    </a>
+																						<span class="rait-box">
+																							8.24                                        <img src="http://my-sitetest.space/democasino-wp/wp-content/themes/democasino/img/rait-star.png" alt="raiting">
+																						</span>
+																						<span class="feedback-box">
+																						0 отзывов                                    </span>
+																						<div class="boxes-container-item-maininfo">
+																							<a href="http://my-sitetest.space/democasino-wp/vavada/">
+																								<h5>Vavada</h5>
+																							</a>
+																							<span>Реклама</span>
+																						</div>
+																					</div>
+																					<div class="right-wrapp">
+																						<div class="btn-wrapp review">
+																							<a href="http://my-sitetest.space/democasino-wp/vavada/" class="play-btn">Играть</a>
+																						</div>
+																						<div class="btn-wrapp">
+																							<a href="https://vavadaout.com/ru/register/" target="_blank" class="play-btn">Играть</a>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+
+																		</div>       
+																		<!-- / Цикл вывода записей -->
+
+
+																	</div>
+																	<div class="col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 news-section__item-box">
+																		<div class="row">
+																			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 news-section__boxes-container">
+																				<h6>ТОП казино онлайн</h6>
+
+
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</section>
+														<!-- New slots -->
+														<section id="new-slot" class="new-slot">
+															<div class="container">
+																<div class="row">
+																	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+																		<h3>Новые слоты</h3>
+																		<div class="owl-carousel owl-theme owl-loaded carousel-one">
+																			<div class="owl-stage-outer">
+																				<div class="owl-stage">
+																					<div class="owl-item">
+																						<div class="item">
+																							<a href="#"><img src="img/slot-1.jpg" alt="news-img"></a>
+																							<!-- Button trigger modal -->
+																							<a href="#" class="play-btn" type="button" data-toggle="modal" data-target="#exampleModalLong1">
+																								<img src="img/play-btn.png" data-toggle="modal" data-target="#exampleModal" alt="play button">
+																							</a>
+																							<div class="stat-box">
+																								<table>
+																									<tr>
+																										<td>Валатильность</td>
+																										<td>RTP</td>
+																									</tr>
+																									<tr>
+																										<td>Высокая</td>
+																										<td>95.77%</td>
+																									</tr>
+																								</table>
+																							</div>
+																						</div>
+																						<div class="text-content">
+																							<a href="#">
+																								<h4>Lucky Fridays</h4>
+																							</a>
+																						</div>
+																					</div>
+																					<div class="owl-item">
+																						<div class="item">
+																							<a href="#"><img src="img/slot-2.jpg" alt="news-img"></a>
+																							<!-- Button trigger modal -->
+																							<a href="#" class="play-btn" type="button" data-toggle="modal" data-target="#exampleModalLong2">
+																								<img src="img/play-btn.png" data-toggle="modal" data-target="#exampleModal" alt="play button">
+																							</a>
+																							<div class="stat-box">
+																								<table>
+																									<tr>
+																										<td>Валатильность</td>
+																										<td>RTP</td>
+																									</tr>
+																									<tr>
+																										<td>Средняя</td>
+																										<td>96.2%</td>
+																									</tr>
+																								</table>
+																							</div>
+																						</div>
+																						<div class="text-content">
+																							<a href="#">
+																								<h4>Feline Fury</h4>
+																							</a>
+																						</div>
+																					</div>
+																					<div class="owl-item">
+																						<div class="item">
+																							<a href="#"><img src="img/slot-3.jpg" alt="news-img"></a>
+																							<!-- Button trigger modal -->
+																							<a href="#" class="play-btn" type="button" data-toggle="modal" data-target="#exampleModalLong3">
+																								<img src="img/play-btn.png" data-toggle="modal" data-target="#exampleModal" alt="play button">
+																							</a>
+																							<div class="stat-box">
+																								<table>
+																									<tr>
+																										<td>Валатильность</td>
+																										<td>RTP</td>
+																									</tr>
+																									<tr>
+																										<td>Высокая</td>
+																										<td>96.61%</td>
+																									</tr>
+																								</table>
+																							</div>
+																						</div>
+																						<div class="text-content">
+																							<a href="#">
+																								<h4>Wild Wild Riches</h4>
+																							</a>
+																						</div>
+																					</div>
+																					<div class="owl-item">
+																						<div class="item">
+																							<a href="#"><img src="img/slot-4.jpg" alt="news-img"></a>
+																							<!-- Button trigger modal -->
+																							<a href="#" class="play-btn" type="button" data-toggle="modal" data-target="#exampleModalLong4">
+																								<img src="img/play-btn.png" data-toggle="modal" data-target="#exampleModal" alt="play button">
+																							</a>
+																							<div class="stat-box">
+																								<table>
+																									<tr>
+																										<td>Валатильность</td>
+																										<td>RTP</td>
+																									</tr>
+																									<tr>
+																										<td>Высокая</td>
+																										<td>96.61%</td>
+																									</tr>
+																								</table>
+																							</div>
+																						</div>
+																						<div class="text-content">
+																							<a href="#">
+																								<h4>Primal Hunt</h4>
+																							</a>
+																						</div>
+																					</div>
+																					<div class="owl-item">
+																						<div class="item">
+																							<a href="#"><img src="img/slot-5.jpg" alt="news-img"></a>
+																							<!-- Button trigger modal -->
+																							<a href="#" class="play-btn" type="button" data-toggle="modal" data-target="#exampleModalLong5">
+																								<img src="img/play-btn.png" data-toggle="modal" data-target="#exampleModal" alt="play button">
+																							</a>
+																							<div class="stat-box">
+																								<table>
+																									<tr>
+																										<td>Валатильность</td>
+																										<td>RTP</td>
+																									</tr>
+																									<tr>
+																										<td>Высокая</td>
+																										<td>96.61%</td>
+																									</tr>
+																								</table>
+																							</div>
+																						</div>
+																						<div class="text-content">
+																							<a href="#">
+																								<h4>Fortunium Gold Mega Moolah</h4>
+																							</a>
+																						</div>
+																					</div>
+																					<div class="owl-item">
+																						<div class="item">
+																							<a href="#"><img src="img/slot-4.jpg" alt="news-img"></a>
+																							<!-- Button trigger modal -->
+																							<a href="#" class="play-btn" type="button" data-toggle="modal" data-target="#exampleModalLong4">
+																								<img src="img/play-btn.png" data-toggle="modal" data-target="#exampleModal" alt="play button">
+																							</a>
+																							<div class="stat-box">
+																								<table>
+																									<tr>
+																										<td>Валатильность</td>
+																										<td>RTP</td>
+																									</tr>
+																									<tr>
+																										<td>Высокая</td>
+																										<td>96.61%</td>
+																									</tr>
+																								</table>
+																							</div>
+																						</div>
+																						<div class="text-content">
+																							<a href="#">
+																								<h4>Primal Hunt</h4>
+																							</a>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+
+															<!-- Modal 1 -->
+															<div class="modal fade" id="exampleModalLong1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+																<div class="modal-dialog" role="document">
+																	<div class="modal-content">
+																		<div class="modal-header">
+																			<!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+																			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																				<span aria-hidden="true">&times;</span>
+																			</button>
+																		</div>
+																		<div class="modal-body">
+																			<iframe src="https://gserver-rtg.redtiger.com/rtg/launcher/LuckyFridays"></iframe>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<!-- Modal 2 -->
+															<div class="modal fade" id="exampleModalLong2" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+																<div class="modal-dialog" role="document">
+																	<div class="modal-content">
+																		<div class="modal-header">
+																			<!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+																			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																				<span aria-hidden="true">&times;</span>
+																			</button>
+																		</div>
+																		<div class="modal-body">
+																			<iframe src="https://asccw.playngonetwork.com/Casino/IframedView?pid=2&gid=felinefury&lang=en_US&practice=1&channel=desktop&div=flashobject&width=100%25&height=100%25&user=&password=&ctx=&demo=2&brand=&lobby=&rccurrentsessiontime=0&rcintervaltime=0&rcaccounthistoryurl=&rccontinueurl=&rcexiturl=&rchistoryurlmode=&autoplaylimits=0&autoplayreset=0&callback=flashCallback&rcmga=&resourcelevel=0&hasjackpots=False&country=&pauseplay=&playlimit=&selftest=&sessiontime=&coreweburl=https://asccw.playngonetwork.com/&showpoweredby=True"></iframe>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<!-- Modal 3 -->
+															<div class="modal fade" id="exampleModalLong3" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+																<div class="modal-dialog" role="document">
+																	<div class="modal-content">
+																		<div class="modal-header">
+																			<!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+																			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																				<span aria-hidden="true">&times;</span>
+																			</button>
+																		</div>
+																		<div class="modal-body">
+																			<iframe src="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?lang=en&cur=EUR&gameSymbol=vs576treasures&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobbyURL=https%3A%2F%2Fwww.pragmaticplay.com"></iframe>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<!-- Modal 4 -->
+															<div class="modal fade" id="exampleModalLong4" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+																<div class="modal-dialog" role="document">
+																	<div class="modal-content">
+																		<div class="modal-header">
+																			<!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+																			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																				<span aria-hidden="true">&times;</span>
+																			</button>
+																		</div>
+																		<div class="modal-body">
+																			<iframe src="https://democasino.betsoftgaming.com/cwguestlogin.do?bankId=675&CDN=AUTO&gameId=833"></iframe>
+																		</div>
+																	</div>
+																</div>
+															</div>
+
+															<!-- Modal 5 -->
+															<div class="modal fade" id="exampleModalLong5" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+																<div class="modal-dialog" role="document">
+																	<div class="modal-content">
+																		<div class="modal-header">
+																			<!-- <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5> -->
+																			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																				<span aria-hidden="true">&times;</span>
+																			</button>
+																		</div>
+																		<div class="modal-body">
+																			<iframe src="https://redirector32.valueactive.eu/Casino/Default.aspx?applicationid=4023&serverid=22619&gameid=fortuniumGoldMegaMoolahDesktop&ul=en&variant=uat-demo&sext1=demo&sext2=demo&lobbyURL=http://www.microgaming.co.uk/games?pagesize=25&sortorder=Descending&sortfield=Release%20Date"></iframe>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</section>
+														<!-- / New slots -->
+
+														<!-- Pre footer section -->
+														<section id="pre-footer" class="pre-footer">
+															<div class="container">
+																<div class="row">
+																	<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pre-footer__item">
+																		<ul>
+																			<li class="current-menu-item"><a href="#">Рейтинг казино</a></li>
+																			<li><a href="#">Бонусы</a></li>
+																			<li><a href="#">Игровые автоматы</a></li>
+																		</ul>
+																	</div>
+																	<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pre-footer__item">
+																		<ul>
+																			<li><a href="#">Новости</a></li>
+																			<li><a href="#">Блог</a></li>
+																			<li><a href="#">Рейтинг казино</a></li>
+																		</ul>
+																	</div>
+																	<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 pre-footer__item">
+																		<ul>
+																			<li><a href="#">Игровые автоматы</a></li>
+																			<li><a href="#">Новости</a></li>
+																			<li><a href="#">Софт</a></li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</section>
+														<!-- / Pre footer section -->
+
+														<!-- Footer -->
+														<footer>
+															<div class="container">
+																<p>
+																	Copyright © 2016-<script type="text/javascript">var mdate = new Date(); document.write(mdate.getFullYear());</script>
+																	DemoCasino. Все права защищены.  
+																</p>
+															</div>
+														</footer>
+														<!-- / Footer -->
+														<script src="js/libs.min.js"></script>
+														<script src="js/common.js"></script>
+													</body>
+
+													</html>
