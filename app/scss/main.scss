@@ -1828,11 +1828,9 @@ footer {
 
     .container {
         background-color: $white;
-        padding-bottom: 30px;
 
         @media (min-width: 1200px) {
             padding-left: 30px;
-            padding-bottom: 45px;
         }
 
         @media (min-width: 1480px) {
@@ -1846,9 +1844,11 @@ footer {
 
     .inner-container__content {
         padding-top: 30px;
+        padding-bottom: 30px;
 
         @media (min-width: 992px) {
             padding-top: 60px;
+            padding-bottom: 60px;
         }
 
         .soft-box {
@@ -2268,6 +2268,8 @@ footer {
     }
 }
 
+
+
 .news-section__item-box {
     background-color: #e5e5e5;
 
@@ -2310,7 +2312,7 @@ footer {
             font-weight: 300;
             letter-spacing: 0;
             border: 1px solid #f4f4f4;
-            padding: 0.375rem 0.75rem;
+            padding: 0.475rem 0.75rem;
             min-width: 200px;
             display: block;
             margin-top: 2px;
@@ -2683,4 +2685,8 @@ footer {
 
 .comment-awaiting-moderation {
     font-size: 12px;
+}
+
+.inner-section .inner-container__content .automat-box.response .item .stat-box {
+    bottom: 34px;
 }

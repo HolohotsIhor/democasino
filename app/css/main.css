@@ -1376,22 +1376,22 @@ footer {
     background-color: #bdefd2;
     padding-top: 40px; }
   .inner-section .container {
-    background-color: #fff;
-    padding-bottom: 30px; }
+    background-color: #fff; }
     @media (min-width: 1200px) {
       .inner-section .container {
-        padding-left: 30px;
-        padding-bottom: 45px; } }
+        padding-left: 30px; } }
     @media (min-width: 1480px) {
       .inner-section .container {
         padding-left: 45px; } }
     .inner-section .container.help {
       padding: 0; }
   .inner-section .inner-container__content {
-    padding-top: 30px; }
+    padding-top: 30px;
+    padding-bottom: 30px; }
     @media (min-width: 992px) {
       .inner-section .inner-container__content {
-        padding-top: 60px; } }
+        padding-top: 60px;
+        padding-bottom: 60px; } }
     .inner-section .inner-container__content .soft-box .soft-box__item {
       margin-bottom: 15px; }
       .inner-section .inner-container__content .soft-box .soft-box__item:last-child {
@@ -1681,7 +1681,7 @@ footer {
         font-weight: 300;
         letter-spacing: 0;
         border: 1px solid #f4f4f4;
-        padding: 0.375rem 0.75rem;
+        padding: 0.475rem 0.75rem;
         min-width: 200px;
         display: block;
         margin-top: 2px;
@@ -1941,3 +1941,6 @@ footer {
 
 .comment-awaiting-moderation {
   font-size: 12px; }
+
+.inner-section .inner-container__content .automat-box.response .item .stat-box {
+  bottom: 34px; }
