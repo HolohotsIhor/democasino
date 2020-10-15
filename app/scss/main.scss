@@ -538,15 +538,15 @@ header {
 
                 li {
                     display: inline-block;
-                    margin-right: 65px;
+                    margin-right: 47px;
                     position: relative;
 
                     @media (min-width: 1200px) {
-                        margin-right: 95px;
+                        margin-right: 83px;
                     }
 
                     @media (min-width: 1480px) {
-                        margin-right: 139px;
+                        margin-right: 135px;
                     }
 
                     &:last-child {
@@ -2135,6 +2135,11 @@ footer {
                     }
 
                     &.review {
+                        display: none;
+
+                        @media (min-width: 768px) {
+                            display: inline-block;
+                        }
 
                         a {
                             background-color: #f4f4f4;
@@ -2342,6 +2347,7 @@ footer {
 }
 
 .news-section__boxes-container-item {
+    border-bottom: solid 1px #dcdcdc;
 
     &:last-child {
 
@@ -2351,7 +2357,6 @@ footer {
     }
 
     .main-wrapp {
-        border-bottom: solid 1px #dcdcdc;
         display: inline-block;
         width: 100%;
         padding: 15px 10px 20px 10px;
@@ -2369,6 +2374,21 @@ footer {
                     display: block;
                 }
             }
+        }
+
+        .left-wrapp {
+
+            .rait-wrapp {
+                display: none;
+
+                @media (min-width: 992px) {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .right-wrapp {
+
         }
     }
 }

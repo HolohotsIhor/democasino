@@ -411,14 +411,14 @@ header {
       margin-bottom: 0; }
       header .top-bar__menu .desk-nav ul li {
         display: inline-block;
-        margin-right: 65px;
+        margin-right: 47px;
         position: relative; }
         @media (min-width: 1200px) {
           header .top-bar__menu .desk-nav ul li {
-            margin-right: 95px; } }
+            margin-right: 83px; } }
         @media (min-width: 1480px) {
           header .top-bar__menu .desk-nav ul li {
-            margin-right: 139px; } }
+            margin-right: 135px; } }
         header .top-bar__menu .desk-nav ul li:last-child {
           margin-right: 0; }
         header .top-bar__menu .desk-nav ul li:hover a {
@@ -1570,13 +1570,18 @@ footer {
           height: auto;
           background-color: transparent;
           padding-top: 0; } }
-      .inner-section .inner-container__content .wrapp-rait-casino .news-section__boxes-container-item .right-wrapp .btn-wrapp.review a {
-        background-color: #f4f4f4;
-        color: #222;
-        margin-right: 5px; }
-        @media (min-width: 992px) {
-          .inner-section .inner-container__content .wrapp-rait-casino .news-section__boxes-container-item .right-wrapp .btn-wrapp.review a {
-            margin-right: 10px; } }
+      .inner-section .inner-container__content .wrapp-rait-casino .news-section__boxes-container-item .right-wrapp .btn-wrapp.review {
+        display: none; }
+        @media (min-width: 768px) {
+          .inner-section .inner-container__content .wrapp-rait-casino .news-section__boxes-container-item .right-wrapp .btn-wrapp.review {
+            display: inline-block; } }
+        .inner-section .inner-container__content .wrapp-rait-casino .news-section__boxes-container-item .right-wrapp .btn-wrapp.review a {
+          background-color: #f4f4f4;
+          color: #222;
+          margin-right: 5px; }
+          @media (min-width: 992px) {
+            .inner-section .inner-container__content .wrapp-rait-casino .news-section__boxes-container-item .right-wrapp .btn-wrapp.review a {
+              margin-right: 10px; } }
       .inner-section .inner-container__content .wrapp-rait-casino .news-section__boxes-container-item .right-wrapp .btn-wrapp a {
         padding: 7px 15px; }
     .inner-section .inner-container__content .news-main-item-box {
@@ -1703,22 +1708,27 @@ footer {
           .inner-section .news-section__item-box .news-section__boxes-container h6 {
             font-size: 15px; } }
 
-.news-section__boxes-container-item:last-child .main-wrapp {
-  border: 0; }
-
-.news-section__boxes-container-item .main-wrapp {
-  border-bottom: solid 1px #dcdcdc;
-  display: inline-block;
-  width: 100%;
-  padding: 15px 10px 20px 10px; }
-  @media (min-width: 992px) {
-    .news-section__boxes-container-item .main-wrapp {
-      padding: 5px 10px 5px 10px; } }
-  .news-section__boxes-container-item .main-wrapp:hover {
-    background-color: #dcdcdc; }
+.news-section__boxes-container-item {
+  border-bottom: solid 1px #dcdcdc; }
+  .news-section__boxes-container-item:last-child .main-wrapp {
+    border: 0; }
+  .news-section__boxes-container-item .main-wrapp {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 10px 20px 10px; }
     @media (min-width: 992px) {
-      .news-section__boxes-container-item .main-wrapp:hover .btn-wrapp {
-        display: block; } }
+      .news-section__boxes-container-item .main-wrapp {
+        padding: 5px 10px 5px 10px; } }
+    .news-section__boxes-container-item .main-wrapp:hover {
+      background-color: #dcdcdc; }
+      @media (min-width: 992px) {
+        .news-section__boxes-container-item .main-wrapp:hover .btn-wrapp {
+          display: block; } }
+    .news-section__boxes-container-item .main-wrapp .left-wrapp .rait-wrapp {
+      display: none; }
+      @media (min-width: 992px) {
+        .news-section__boxes-container-item .main-wrapp .left-wrapp .rait-wrapp {
+          display: inline-block; } }
 
 .left-wrapp {
   max-width: 70%;
