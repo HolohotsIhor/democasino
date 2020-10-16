@@ -1823,7 +1823,25 @@ footer {
 
     .wrapp {
         background-color: #bdefd2;
-        padding-top: 40px;
+        padding: 20px 15px;
+        color: $green;
+
+        span {
+            font-size: 12px;
+
+            &.current-item {
+                color: $black;
+            }
+
+            a {
+                color: $green;
+                font-size: 12px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 
     .container {
@@ -2028,15 +2046,9 @@ footer {
 
                         @media (min-width: 992px) {
                             display: inline-block;
-                            margin-right: 40px;
-                        }
-
-                        @media (min-width: 1200px) {
-                            margin-right: 100px;
-                        }
-
-                        @media (min-width: 1480px) {
-                            margin-right: 180px;
+                            width: 39%;
+                            text-align: right;
+                            line-height: 1;
                         }
 
                         .rait-box {
@@ -2051,7 +2063,7 @@ footer {
 
                             img {
                                 width: 16px;
-                                top: -2px;
+                                top: -1px;
                                 position: relative;
                                 float: right;
                                 margin-bottom: 0;
@@ -2078,18 +2090,12 @@ footer {
                 .boxes-container-item-imgbox {
 
                     @media (min-width: 992px) {
-                        margin-right: 40px;
-                    }
-
-                    @media (min-width: 1200px) {
-                        margin-right: 100px;
-                    }
-
-                    @media (min-width: 1480px) {
-                        margin-right: 180px;
+                        width: 20%;
                     }
 
                     img {
+                        margin-bottom: 0;
+
                         @media (min-width: 768px) {
                             max-width: 70px;
                             height: 40px;
@@ -2124,7 +2130,7 @@ footer {
 
                 .btn-wrapp {
                     display: inline-block;
-                    margin-top: 4px;
+                    margin-top: 2px;
 
                     @media (min-width: 992px) {
                         position: unset;
@@ -2148,6 +2154,10 @@ footer {
 
                             @media (min-width: 992px) {
                                 margin-right: 10px;
+                            }
+
+                            &:hover {
+                                background-color: #ececec;
                             }
                         }
                     }
@@ -2350,19 +2360,16 @@ footer {
     border-bottom: solid 1px #dcdcdc;
 
     &:last-child {
-
-        .main-wrapp {
-            border: 0;
-        }
+        border-bottom: 0;
     }
 
     .main-wrapp {
         display: inline-block;
         width: 100%;
-        padding: 15px 10px 20px 10px;
+        padding: 15px 10px 10px 10px;
 
         @media (min-width: 992px) {
-            padding: 5px 10px 5px 10px;
+            padding: 5px 10px 0 10px;
         }
 
         &:hover {
@@ -2405,6 +2412,7 @@ footer {
             max-width: 75px;
             height: 42px;
             margin-right: 5px;
+            margin-bottom: 0;
 
             @media (min-width: 768px) {
                 max-width: 35px;
@@ -2429,6 +2437,12 @@ footer {
         display: inline-block;
         line-height: 16px;
 
+        @media (min-width: 992px) {
+            width: 40%;
+            text-align: right;
+            margin-top: 0;
+        }
+
         a {
 
             h5 {
@@ -2448,6 +2462,14 @@ footer {
                 font-size: 11px;
             }
         }
+    }
+}
+
+.news-section__boxes-container .left-wrapp .boxes-container-item-maininfo {
+
+    @media (min-width: 992px) {
+        width: unset;
+        text-align: left;
     }
 }
 
@@ -2476,7 +2498,7 @@ footer {
 
         img {
             width: 16px;
-            top: -3px;
+            top: -1px;
             position: relative;
         }
     }
